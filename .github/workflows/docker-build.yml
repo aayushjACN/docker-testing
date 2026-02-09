@@ -37,4 +37,4 @@ jobs:
           tags: ${{ steps.meta.outputs.tags }}
 
       - name: Print Docker image URL
-        run: echo "Docker image pushed to ghcr.io/${{ github.repository }}:${{ steps.meta.outputs.tags }}"
+        run: echo "${{ steps.meta.outputs.tags }}"
